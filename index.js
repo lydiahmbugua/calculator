@@ -41,7 +41,6 @@ const display=document.querySelector('.display');
 const equalSign=document.querySelector('.equal');
 const clear=document.querySelector('.clear');
 button.forEach(btn=>{
-    buttons.appendChild(btn);
     btn.addEventListener('click', (e) => {
     const input = e.target.textContent;
 
@@ -60,7 +59,6 @@ button.forEach(btn=>{
     }
 });});
  operators.forEach(operation=>{
-        buttons.appendChild(operation);
         operation.addEventListener('click',(e)=>{
             digit='';
             operator=e.target.textContent;

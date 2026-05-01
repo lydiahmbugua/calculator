@@ -1,21 +1,45 @@
-.container{
-    width:300px;
+body{
+    display:flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
     height:100vh;
+    color:purple;
+        font-family: 'Courier New', Courier, monospace;
+
+
+}
+.container{
+    width:340px;
+    border:5px solid purple;
+    border-radius: 24px;
 }
 .display{
-    width:260px;
-    margin:20px;
     height:50px;
-    border:1px solid black;
-    padding:10px;
+    padding:20px;
+    font-size: x-large;
+    font-weight: bold;
 }
 .buttons{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:1rem;
-    padding:40px;
     aspect-ratio: 1/1;
+    background-color: rgb(245, 4, 193);
+    border-top:2px solid purple;
+
 }
-.clear,.equal,.operator{
-    order: 99;
+button{
+    border:none;
+    border-bottom:.5px solid purple;
+    border-right:.5px solid purple;
+    background-color: rgb(245, 4, 193);
+    color:purple;
+
+
+
+}
+button:hover{
+    color:purple;
+    background-color: pink;
 }
